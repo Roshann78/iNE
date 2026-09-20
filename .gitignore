@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+.env.local
+
+# Blueprint & plan docs
+price-tracker-blueprint.md

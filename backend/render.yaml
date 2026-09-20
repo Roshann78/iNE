@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ine-price-tracker
+    runtime: node
+    plan: free
+    buildCommand: npm install && npx playwright install --with-deps chromium
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
